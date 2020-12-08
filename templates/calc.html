@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}CALC{% endblock %}
+
+    {% block content %}
+        
+        <div id="calc">
+        <h1>The solution is:</h1>
+        <!-- <p>{{operations}}</p>
+        <p>{{num1}}</p>
+        <p>{{num2}}</p>
+        <p>{{num2 + num1}}</p>  -->
+ 
+    {% if operations == "option1" %}
+            <p>{{num1 + num2}}</p>
+        {% elif operations == "option2" %}
+            <p>{{num1 - num2}}</p>
+        {% elif operations == "option3" %}
+            <p>{{num1 * num2}}</p>
+        {% elif operations == "option4" %}
+            <p>{{num1 / num2}}</p>
+        {% endif %}
+     
+    </div>
+{% endblock %}

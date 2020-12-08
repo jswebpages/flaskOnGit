@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Story{% endblock %}
+
+    {% block content %}
+    {% if story == "option1" %}
+    <div class="card">
+    <p class="story card">
+        <h3>STORY</h3>
+        Caring for a pet {{animal}} is a lot
+        of responsibility.  Your pet {{animal}} 
+       depends of you for survival.  You have 
+       to feed it and give it {{snack}} 
+       when it has been good.  
+       Play with your {{animal}} to keep it active.</p>
+    {% elif story == "option2" %}
+    <p class="story card"><h3>STORY</h3>
+        Caring for a pet {{animal}} is a lot
+        of responsibility.  Your pet {{animal}} 
+       depends of you for survival.  You have 
+       to feed it and give it {{snack}} 
+       when it has been good.  
+       Play with your {{animal}} to keep it active.</p>
+    {% elif story == "option3" %}
+    <p class="story card"><h3>STORY</h3>
+        Caring for a pet {{animal}} is a lot
+         of responsibility.  Your pet {{animal}} 
+        depends of you for survival.  You have 
+        to feed it and give it {{snack}} 
+        when it has been good.  
+        Play with your {{animal}} to keep it active.
+    </p>
+    </div>
+    {% endif %}
+
+{% endblock %}

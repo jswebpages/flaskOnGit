@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}LUCK{% endblock %}
+
+{% block content %}
+<div id="calc">
+    <h1>Lucky DICE!! Page....</h1>
+    <h2>Dice1 roll: {{Dice1}}</h2>
+    <h2>Dice2 roll: {{Dice2}}</h2>
+    <p>{{msg}}</p>
+    {% if (Dice1 + Dice2) == 7 %}
+    <h2>You rolled a 7, you WIN!!!!</h2>
+    <button onClick="window.location.reload();">NEW GAME</button>
+    {% elif (Dice1 + Dice2) == 11 %}
+    <h2>You rolled a {{Dice1 + Dice2}}, you Lose!!!!</h2>
+    <button onClick="window.location.reload();">NEW GAME</button>
+    {% else %}
+    <h2>You rolled a {{Dice1 + Dice2}}, Roll Dice Again!!!!</h2>
+    <button onClick="window.location.reload();">ROLL DICE</button>
+</div>
+    {% endif %}
+
+{% endblock %}

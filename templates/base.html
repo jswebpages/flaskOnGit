@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+<nav class="navBar">
+    <ul>
+      <li id="logo">JS</li> 
+      <li><a href="/blog">BLOG</a></li> 
+      <li><a href="/madlibs">MADLIBS</a></li>
+      <li><a href="/lucky">LUCKY_DICE</a></li>
+      <li><a href="/entercalc">CALC</a></li>
+      <li><a href="/form">GREET</a></li>      
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="/">HOME</a></li>
+    </ul>  
+</nav>
+  <h1>FLASK WORK</h1>
+</header>
+{% block content %} {% endblock %}
+
+
+
+<footer></footer>    
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}GREET{% endblock %}
+
+{% block content %}
+<h1>Lets meet and Greet</h1>
+<form action="/greet">
+    <input type="text" placeholder="your name" name="username">    
+    <button>Submit!</button>
+</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}MADLIBS{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Madlibs!</h1>
+    <form action="/story">
+      <h3>Pick a story line:</h3>
+      <input type="radio" name="options" id="option1" value="option1"> Pet Story</input><br>
+      <input type="radio" name="options" id="option2" value="option2"> Bone Story</input><br>
+      <input type="radio" name="options" id="option3" value="option3"> Responsibility Story </input><br>
+      <hr>
+      <h3>Fill in the blanks:</h3>    
+      <p>A type of pet? <input placeholder="Animal" name="animal"></p>
+      <p>Name a state? <input placeholder="state" name="state"></p>
+      <p>Name a snack? <input placeholder="snack" name="snack"></p>
+      <p>Something you wear? <input placeholder="wear" name="wear"></p>
+      <p>Name for a pet? <input placeholder="pet name" name="pet_name"></p>         
+      <button>Submit!</button>
+    </form>
+
+
+</div>    
+{% endblock %}
